@@ -9,7 +9,7 @@ class DocumentExtractor:
         self.llm = ChatGroq(
             model="llama-3.2-90b-text-preview",
             temperature=0,
-            groq_api_key="YOUR_API_KEY",
+            groq_api_key=st.secrets["api_key"],
         )
         self.json_parser = JsonOutputParser()
 
