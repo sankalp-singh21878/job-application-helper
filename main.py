@@ -11,7 +11,7 @@ import chromadb
 import uuid
 
 # Initialize ChromaDB client
-client = chromadb.Client("vectorstore")
+client = chromadb.PersistentClient("vectorstore")
 
 # Streamlit page configuration
 st.set_page_config(page_title="Job Application Helper", layout="wide")
