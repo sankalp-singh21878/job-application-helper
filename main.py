@@ -2,12 +2,13 @@ import streamlit as st
 from utils.document_extraction import DocumentExtractor
 from utils.cold_email_generation import ColdEmailGenerator
 import pandas as pd
-import chromadb
-import uuid
 
 __import__('pysqlite3')
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
+import chromadb
+import uuid
 
 # Initialize ChromaDB client
 client = chromadb.Client("vectorstore")
