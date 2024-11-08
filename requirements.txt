@@ -7,3 +7,4 @@ pandas==2.2.3
 uuid==1.30
 streamlit==1.40.0
 pysqlite3-binary==0.5.4
+beautifulsoup4==4.12.3
