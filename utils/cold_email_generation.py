@@ -6,7 +6,7 @@ class ColdEmailGenerator:
         self.llm = ChatGroq(
             model="llama-3.2-90b-text-preview",
             temperature=0,
-            groq_api_key="YOUR_API_KEY_HERE"
+            groq_api_key=st.secrets["api_key"],
         )
 
     def generate_email(self, job_description, resume_text, links_list):
